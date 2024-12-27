@@ -33,8 +33,10 @@ svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/
 
 # Fix runc version error
 # rm -rf ./feeds/packages/utils/runc/Makefile
-# svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
-
+# svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile./feeds/packages/utils/runc/Makefile 
+# svn https://github.com/FUjr/modem_feeds.git
+# svn https://github.com/kenzok8/openwrt-packages
+# svn https://github.com/kenzok8/small
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
