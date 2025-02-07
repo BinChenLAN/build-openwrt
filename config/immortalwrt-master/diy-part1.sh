@@ -7,13 +7,11 @@
 #========================================================================================================================
 
 # Add a feed source
-  sed -i '$a src-git packages https://github.com/immortalwrt/packages.git' feeds.conf.default
-  sed -i '$a src-git luci https://github.com/immortalwrt/luci.git' feeds.conf.default
-  sed -i '$a  src-git routing https://github.com/openwrt/routing.git' feeds.conf.default
-  sed -i '$a src-git telephony https://github.com/openwrt/telephony.git' feeds.conf.default
-  sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-  sed -i '$a src-git modem https://github.com/FUjr/modem_feeds.git'  feeds.conf.default
-  sed -i '$a src-git istore https://github.com/linkease/istore'  feeds.conf.default
+echo >> feeds.conf.default
+echo 'src-git modem https://github.com/FUjr/modem_feeds.git;main' >> feeds.conf.defaul
+echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+
+
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
